@@ -32,6 +32,26 @@
             text-align: center;
         }
 
+        .profile-section {
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .profile-image-corner {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .profile-main {
+            max-width: 800px;
+        }
+
         .profile-content {
             display: flex;
             align-items: center;
@@ -361,30 +381,32 @@
     <header>
         <div class="container">
             <div class="profile-section">
-                <img src="profile-photo.jpeg" alt="Jolanda Malamud" class="profile-image">
+                <img src="profile-photo.jpeg" alt="Jolanda Malamud" class="profile-image-corner">
                 
-                <h1>Jolanda Malamud</h1>
-                <p class="title">Data Scientist & Computational Psychiatry Researcher</p>
-                
-                <div class="contact-info">
-                    <a href="mailto:jolandamalamud@gmail.com">
-                        📧 Email
-                    </a>
-                    <a href="https://linkedin.com/in/jolandamalamud" target="_blank">
-                        💼 LinkedIn
-                    </a>
-                    <a href="https://github.com/jolandamalamud" target="_blank">
-                        💻 GitHub
-                    </a>
-                    <span>📍 Zurich, Switzerland</span>
-                </div>
-                
-                <div class="about">
-                    <p>Applied Computational Scientist focused on solving complex human problems. I build foundational and predictive models using advanced statistical methods and AI/ML techniques, turning complex data into clear, actionable scientific insights. I'm passionate about using technology for good, collaborating with mission-driven teams, and creating meaningful impact.</p>
+                <div class="profile-main">
+                    <h1>Jolanda Malamud</h1>
+                    <p class="title">Data Scientist & Computational Psychiatry Researcher</p>
+                    
+                    <div class="contact-info">
+                        <a href="mailto:jolandamalamud@gmail.com">
+                            📧 Email
+                        </a>
+                        <a href="https://linkedin.com/in/jolandamalamud" target="_blank">
+                            💼 LinkedIn
+                        </a>
+                        <a href="https://github.com/jolandamalamud" target="_blank">
+                            💻 GitHub
+                        </a>
+                        <span>📍 Zurich, Switzerland</span>
+                    </div>
+                    
+                    <div class="about">
+                        <p>Applied Computational Scientist focused on solving complex human problems. I build foundational and predictive models using advanced statistical methods and AI/ML techniques, turning complex data into clear, actionable scientific insights. I'm passionate about using technology for good, collaborating with mission-driven teams, and creating meaningful impact.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+</header>
 
     <!-- Navigation -->
     <nav>
