@@ -27,22 +27,22 @@
         /* Header */
         .split-header {
             display: grid;
-            grid-template-columns: auto 1fr;  /* Photo takes natural width, text fills rest */
-            max-height: 400px;
+            grid-template-columns: auto 1fr;
+            height: 300px;  /* Fixed height so photo and text match */
             margin: 0;
         }
         
         .split-left {
             position: relative;
             overflow: hidden;
-            max-width: 350px;  /* Maximum photo width */
-            min-width: 280px;  /* Minimum photo width */
+            max-width: 350px;
+            min-width: 280px;
         }
         
         .split-image {
             width: 100%;
             height: 100%;
-            object-fit: cover;  /* Fills the space */
+            object-fit: cover;
             object-position: center;
         }
         
@@ -58,28 +58,28 @@
         }
         
         .split-content {
-            max-width: 800px;
+            max-width: 900px;
         }
         
         .split-content h1 {
-            font-size: 2rem;
-            margin-bottom: 0.4rem;
+            font-size: 2.5rem;  /* Bigger */
+            margin-bottom: 0.5rem;
             color: white;
             line-height: 1.2;
         }
         
         .split-content .title {
-            font-size: 1.05rem;
+            font-size: 1.2rem;  /* Bigger */
             color: rgba(255, 255, 255, 0.95);
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
         }
         
         .contact-info {
             display: flex;
             flex-wrap: wrap;
-            gap: 1.2rem;
-            margin-bottom: 1rem;
-            padding-bottom: 1rem;
+            gap: 1.5rem;
+            margin-bottom: 1.2rem;
+            padding-bottom: 1.2rem;
             border-bottom: 2px solid rgba(255, 255, 255, 0.3);
         }
         
@@ -87,7 +87,7 @@
         .contact-info span {
             color: rgba(255, 255, 255, 0.9);
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 1rem;  /* Bigger */
             transition: color 0.3s ease;
         }
         
@@ -98,7 +98,7 @@
         .about p {
             color: rgba(255, 255, 255, 0.95);
             line-height: 1.6;
-            font-size: 0.95rem;
+            font-size: 1.05rem;  /* Bigger */
             margin: 0;
         }
         
@@ -106,11 +106,11 @@
         @media (max-width: 968px) {
             .split-header {
                 grid-template-columns: 1fr;
-                max-height: none;
+                height: auto;
             }
             
             .split-left {
-                height: 350px;
+                height: 300px;
                 max-width: none;
             }
             
