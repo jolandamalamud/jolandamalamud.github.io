@@ -28,7 +28,7 @@
         .split-header {
             display: grid;
             grid-template-columns: 30% 70%;  /* Less space for photo, more for text */
-            height: 250px;  /* Fixed height */
+            height: 280px;  /* Taller to fit bio */
             margin: 0;
         }
         
@@ -52,7 +52,7 @@
             background: linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.9));
             display: flex;
             align-items: center;
-            padding: 1.5rem 3rem;  /* Horizontal padding for breathing room */
+            padding: 1.5rem 3rem;
         }
         
         .split-content {
@@ -60,14 +60,14 @@
         }
         
         .split-content h1 {
-            font-size: 2.2rem;  /* Bigger */
+            font-size: 2.2rem;
             margin-bottom: 0.3rem;
             color: white;
             line-height: 1.2;
         }
         
         .split-content .title {
-            font-size: 1.1rem;  /* Bigger */
+            font-size: 1.1rem;
             color: rgba(255, 255, 255, 0.95);
             margin-bottom: 0.8rem;
         }
@@ -77,13 +77,15 @@
             flex-wrap: wrap;
             gap: 1.2rem;
             margin-bottom: 0.8rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
         }
         
         .contact-info a,
         .contact-info span {
             color: rgba(255, 255, 255, 0.9);
             text-decoration: none;
-            font-size: 0.9rem;  /* Slightly bigger */
+            font-size: 0.9rem;
             transition: color 0.3s ease;
         }
         
@@ -91,8 +93,11 @@
             color: white;
         }
         
-        .about {
-            display: none;  /* Hide bio to fit in 200px */
+        .about p {
+            color: rgba(255, 255, 255, 0.95);
+            line-height: 1.5;
+            font-size: 0.95rem;
+            margin: 0;
         }
         
         /* Responsive */
@@ -103,15 +108,11 @@
             }
             
             .split-left {
-                height: 200px;
+                height: 250px;
             }
             
             .split-right {
                 padding: 2rem;
-            }
-            
-            .about {
-                display: block;
             }
         }
 
