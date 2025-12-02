@@ -28,25 +28,20 @@
         .split-header {
             display: grid;
             grid-template-columns: 35% 65%;
-            min-height: 400px;
+            min-height: 250px;  /* Compact height */
             margin: 0;
         }
         
         .split-left {
             position: relative;
             overflow: hidden;
-            background: #f8f9fa;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
         }
         
         .split-image {
-            width: 200px;
-            height: 200px;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            object-position: center;
         }
         
         .split-overlay {
@@ -57,7 +52,7 @@
             background: linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.9));
             display: flex;
             align-items: center;
-            padding: 4rem;
+            padding: 2rem;
         }
         
         .split-content {
@@ -65,23 +60,23 @@
         }
         
         .split-content h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
+            font-size: 2rem;  /* Smaller */
+            margin-bottom: 0.3rem;
             color: white;
         }
         
         .split-content .title {
-            font-size: 1.3rem;
+            font-size: 1rem;  /* Smaller */
             color: rgba(255, 255, 255, 0.95);
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
         
         .contact-info {
             display: flex;
             flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-            padding-bottom: 2rem;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
             border-bottom: 2px solid rgba(255, 255, 255, 0.3);
         }
         
@@ -89,7 +84,7 @@
         .contact-info span {
             color: rgba(255, 255, 255, 0.9);
             text-decoration: none;
-            font-size: 0.95rem;
+            font-size: 0.85rem;  /* Smaller */
             transition: color 0.3s ease;
         }
         
@@ -99,8 +94,8 @@
         
         .about p {
             color: rgba(255, 255, 255, 0.95);
-            line-height: 1.8;
-            font-size: 1.05rem;
+            line-height: 1.6;
+            font-size: 0.9rem;  /* Smaller */
         }
         
         /* Responsive */
@@ -111,7 +106,7 @@
             }
             
             .split-left {
-                height: 350px;
+                height: 250px;
             }
             
             .split-right {
@@ -578,7 +573,7 @@
             </div>
             
             <div style="text-align: center; margin-top: 2rem;">
-                <a href="malamud_resume.pdf" download style="display: inline-block; background: #667eea; color: white; padding: 0.8rem 2rem; border-radius: 5px; text-decoration: none; font-weight: 500;">Download Full CV</a>
+                <a href="malamud_resume_website.pdf" download style="display: inline-block; background: #667eea; color: white; padding: 0.8rem 2rem; border-radius: 5px; text-decoration: none; font-weight: 500;">Download Full CV</a>
             </div>
         </div>
     </section>
